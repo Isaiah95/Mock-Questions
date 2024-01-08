@@ -6,14 +6,19 @@ def main():
 
 
 def dollars_to_float(d):
-    dollars = float("dollars_to_float")
 
-    return dollars
+    d = d.lstrip("$") #lstrip takes away the leading string which in this case is "$"
+    d = float(d) #float allows for decimals inputs
+    
+
+    return d
 
 
 def percent_to_float(p):
-    percent = float("percent_to_float")
 
-    return percent
+    p = p.rstrip("%")   #rstrip takes away the trailing charcter which is going to be "%"
+    p = float(p) #float allows for decimals inputs
+
+    return p/100 #dividing by 100 returns the percentage instead of the actual number
 
 main()
