@@ -1,17 +1,18 @@
 def main():
-    d = deep_to_main(input("What is Answer to the Great Question of Life,"))
+    d = deep_to_main(input("What is the Answer to the Great Question of Life,"))
 
 def deep_to_main(d):
 
     if d == ("42"):
 
-        return print("yes")
-    elif d == ("forty-two") == d("forty-two").upper():
+        return print("Yes")
+    elif d == ("forty-two") or ("forty-two".upper()):
         
-        return print("yes")
-    elif d == d.lower() == ("forty two"):
+        
+        return print("Yes")
+    elif d == ("forty two") or ("forty two".upper()):
 
-        return print("yes")
+        return print("Yes")
     else:
 
         return print("no")
