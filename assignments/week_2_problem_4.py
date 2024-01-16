@@ -1,15 +1,13 @@
-def main():
 
-    x, y, z = expression.split((input("Expression: ")))
+def mathint():
+    expression = input('enter expression: ')
+    x, y, z = expression.split()
+    x = int(x)
+    z = int(z)
+    if y == "+":
 
-
-
-    print()
-
-        
-
-def  expression(x, y , z):
-        
-        if y == "+":
-
-            return x + z
+        return x + z
+    elif y=="/":
+            
+        return x/z
+print(mathint())
