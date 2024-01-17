@@ -1,13 +1,14 @@
 import random
 
-mylist = [None] * 10
-i = random.randrange(1,10)
-while mylist <= len(10):
-    mylist = [i]
+mylist = []
+while len(mylist) < 10:
+    i = random.randrange(1,10)
+    mylist.append(i)
+       
+j = mylist 
 
-mylist.reverse() 
-
-print (mylist)  
+print (mylist)
+print (mylist[::-1]) # [::-1 ] reverses the string
 
 
     
