@@ -1,21 +1,23 @@
 def main():
-    d = deep_to_main(input("What is the Answer to the Great Question of Life,"))
+    deep_to_main(input("What is the Answer to the Great Question of Life,"))
 
 def deep_to_main(d): # goes through 3 ways 42 can be a string
 
-    if d == ("42"): 
+    d = d.lower() # forces the string to be lower
 
-        return print("Yes")
-    elif d == ("forty-two") or ("forty-two".upper()): #the or statment allows for any case type .upper forces the string to be upper case
+    if d == ("42"):
+
+         print("Yes")
+    elif d == ("forty-two"): #the or statment allows for any case type .upper forces the string to be upper case
         
         
-        return print("Yes")
-    elif d == ("forty two") or ("forty two".upper()): #the or statment allows for any case type .upper forces the string to be upper case
+        print("Yes")
+    elif d == ("forty two"): #the or statment allows for any case type .upper forces the string to be upper case
 
-        return print("Yes")
+        print("Yes")
     else: #if any other case is input the function will return 0
 
-        return print("no")  
+         print("no")  
         
 
 main()
