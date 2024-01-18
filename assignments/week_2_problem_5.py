@@ -5,23 +5,26 @@ def main():
 
 
 def convert(time):
-    hours, minutes = time.split(":")
-    hours = float(hours)
+    hours, minutes = time.split(":") # splits apart the hour and minutes from the user entred time based on the ":" "7:30" = 7, 30
+    hours = float(hours) # converts str to float type 
     minutes = float(minutes)
-    if hours >= 7 and hours <=8:
+
+    time = (minutes/60) + hours # converts the time (hours, minutes) to an interger 7:30 = 7.5
+
+    if time >= 7 and time <=8: # gives a range of when its breakfest time or not.
 
         print("Breakfest Time")
-    elif hours >=12 and hours <=13:
+    elif time >=12 and time <=13:
 
         print("Lunch Time")
-    elif hours >=18 and hours <=19:
+    elif time >=18 and time <=19:
 
         print("Dinner Time")
-    else:
+    else: # will not return anything if not in the specified time frames.
         return None             
 
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # proper heading for main
     main()
