@@ -11,7 +11,7 @@ def names(n):
             s+="_" # if so then it will replace them "_"
             s += i.lower() # Also the lower case letter instead of the upper one
         else:    
-            s+= i.lower() # it nothing if found that it upper case it will finish going through the rest of the string
+            s+= i.lower() # when nothing is uppercase, it will finish going through the rest of the string
             
              
     print("snake_case:",s)
