@@ -20,7 +20,7 @@ def is_valid(s):
             else : 
                 for j in range(i+1,len(s)): #also while next element above i ,s[i+1], to the end of the string is a letter. it will be invalid
                     if s[j].isalpha(): #We already know the first 2 elements have to be a letter and the next element has to be a number in this for loop...
-                                        #so the as long as theres no letters after 3 element the it will be valid 
+                                        #so the as long as theres no letters after 3 element it will be valid 
                         return False
     return True                 
     
