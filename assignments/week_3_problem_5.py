@@ -16,7 +16,7 @@ thisdict = { #used a dictnoary to make values and keys for all the furits
   "pineapple" : "50",
   "plums" : "70",
   "strawberries" : "50",
-  "sweetcherries" : "100",
+  "sweet cherries" : "100",
   "tangerine" : "50",
   "watermelon" : "80"  
 }
@@ -24,4 +24,4 @@ item = input("Item: ") # gets the users item as a string
 item = item.lower() #converts any string into all lowercase
 if item in thisdict: #prints the item Calories if its in the dictonary
     
-  print("Calories: ", thisdict[item]) 
+  print("Calories:", thisdict[item]) 
